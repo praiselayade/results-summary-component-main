@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+p {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.container {
+  height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  display: grid;
+  width: 47%;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 2rem;
+  box-shadow: 0 1.5rem 2rem 0 hsl(241, 100%, 89%);
+}
+.box-1 {
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+  background: linear-gradient(360deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+  text-align: center;
+  padding: 3rem 4rem;
+  color: white;
+  border-radius: 2rem;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 15rem;
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 50%;
+}
+.score-acquired {
+  font-size: 5rem;
+  font-weight: 800;
+}
+.score-remarks {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.score-description {
+  color: rgba(255, 255, 255, 0.731);
+}
+
+.box-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 3rem 2rem;
+  background-color: white;
+  color: white;
+  border-radius: 2rem;
+}
+
+.box-2-head {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: hsl(224, 30%, 27%);
+}
+
+.scores {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-weight: 700;
+}
+
+.rxns-icon {
+  display: inline-block;
+  height: 2rem;
+}
+
+.rxns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.score-obtained {
+  color: hsl(224, 30%, 27%);
+}
+.score-obtainable {
+  color: hsla(224, 30%, 27%, 0.7);
+}
+.score-1,
+.score-2,
+.score-3,
+.score-4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.score-1 {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+
+.score-2 {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+
+.score-3 {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+}
+
+.score-4 {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+}
+
+.submit:link,
+.submit:visited {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.8rem;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  padding: 1rem 0;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+
+.submit:hover,
+.submit:active {
+  background-color: hsl(241, 81%, 54%);
+}
